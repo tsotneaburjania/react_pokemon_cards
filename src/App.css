@@ -1,0 +1,70 @@
+.app {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 50px 50px 50px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cardListHolder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+* {
+  text-align: center;
+}
+
+.cardHolder {
+  margin: auto;
+  height: fit-content;
+  width: 300px;
+  flex-basis: 25%;
+  box-sizing: border-box;
+}
+
+.cardHolder > .card {
+  padding: 30px 0px 30px 0px;
+}
+
+.grass > .card {
+  background-color: rgba(153, 196, 153, 0.7);
+}
+
+.fire > .card {
+  background-color: rgba(226, 152, 152, 0.7);
+}
+
+.water > .card {
+  background-color: rgba(152, 203, 226, 0.7);
+}
+
+.normal > .card {
+  background-color: rgba(177, 174, 174, 0.7);
+}
+
+.bug > .card {
+  background-color: rgba(231, 199, 138, 0.7);
+}
+
+.cardHolder img {
+  height: 300px;
+}
+
+.loadMore {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1200px){
+  .cardHolder{ flex-basis: 40%; }
+}
+
+@media only screen and (max-width: 800px){
+  .cardHolder{ flex-basis: 100%; }
+}
