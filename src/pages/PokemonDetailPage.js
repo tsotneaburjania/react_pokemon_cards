@@ -28,7 +28,7 @@ function PokemonDetailPage() {
     }
     useEffect(() => {
         getPokemon();
-    }, [])
+    })
 
     const renderedPokemon = pokemon? (
         <div className={`cardHolder ${type} shadow-lg p-3 mb-5 bg-white rounded`}>

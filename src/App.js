@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import PokemonDetailPage from './pages/PokemonDetailPage';
 import BasePage from './pages/BasePage';
