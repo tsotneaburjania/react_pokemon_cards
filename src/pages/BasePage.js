@@ -35,6 +35,7 @@ function BasePage() {
     }
     
     useEffect(() => {
+      document.title = 'Pokemon Cards';
       getPokemons();
     }, [])
   

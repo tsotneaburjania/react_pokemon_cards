@@ -24,11 +24,12 @@ function PokemonDetailPage() {
             setImage(response.data.sprites.front_default);
             setType(response.data.types[0].type.name);
             setHp(response.data.stats[0].base_stat);
+            document.title = response.data.name;
         })
     }
     useEffect(() => {
         getPokemon();
-    })
+    }, [])
 
     const renderedPokemon = pokemon? (
         <div className={`cardHolder ${type} shadow-lg p-3 mb-5 bg-white rounded`}>
